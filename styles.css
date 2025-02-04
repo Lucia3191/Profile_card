@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background: linear-gradient(to bottom, white, #c98811); /* White to orange gradient */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+}
+
+.full-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.short-bio {
+    font-size: 1rem;
+    color: #444;
+    margin: 10px 0;
+    padding: 0 15px;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.current-location {
+    font-size: 1rem;
+    color: #777;
+}
+
+.email a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #0077b5; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-icon i {
+    margin-right: 8px; 
+}
+
+.social-icon:hover {
+    background-color: #0f181d;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icon.linkedin:hover {
+    background-color: #005582;
+}
+
+.social-icon.github {
+    background-color: #333;
+}
+
+.social-icon.github:hover {
+    background-color: #222;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+}
+
+.social-icon.twitter:hover {
+    background-color: #1684b5;
+}
+
+.current-time {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}

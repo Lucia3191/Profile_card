@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-card">
+        <img src="picture.jpeg" alt="Profile Picture" class="profile-picture" data-testid="profilePicture">
+        
+        <h1 class="full-name" data-testid="fullName">Chibuogwu Lucia</h1>
+
+        <p class="job-title" data-testid="jobTitle">Web Developer</p>
+
+        <p class="short-bio" data-testid="shortBio">
+            Passionate web developer with a focus for frontend technicalities. I love creating intuitive and responsive websites.
+        </p>
+        <p class="current-location" data-testid="currentLocation">Lagos, Nigeria</p>
+        <p class="email" data-testid="emailAddress"><a href="mailto:lucybabe3191@gmail.com">Lucybabe3191@gmail.com</a></p>
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/chibuogwu-lucia-b472a4225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Lucia3191" target="_blank" class="social-icon github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://x.com/Lhucy___" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+        <p class="current-time" data-testid="currentTimeUTC">Current Time (UTC): <span id="current-time"></span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
